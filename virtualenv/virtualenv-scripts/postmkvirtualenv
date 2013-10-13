@@ -1,0 +1,6 @@
+#!/bin/bash
+# This hook is run after a new virtualenv is activated.
+
+dev_env_setup_root=~/src/personal/personal-dev-env
+venv_specific=${dev_env_setup_root}/virtualenv
+
