@@ -1,0 +1,12 @@
+#! /bin/bash -x
+
+color="${TWOINR_COLOR:-"--color=always"}"
+srchpath=${2:-.}
+grepargs=${GREP_ARGS:--2in}
+
+find "$srchpath" \
+        -name '.svn' -prune \
+    -or -name '.git' -prune \
+    -or -name '*.pyc' -prune \
+    -or -name '.*.sw?' -prune \
+    -or -print0 | xargs -0 grep ${color} "${grepargs}" "$1"
