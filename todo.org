@@ -1,0 +1,6 @@
+TODO list for building out dev environment tools
+* Completable tasks
+** TODO Finish up mknomivenv script
+
+* Ongoing tasks
+** Keep tuning codegrep
