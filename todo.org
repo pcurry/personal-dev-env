@@ -1,6 +1,7 @@
 TODO list for building out dev environment tools
 * Completable tasks
-** TODO Finish up mknomivenv script
-
+** TODO Finish up mknomivenv script.
+** TODO Write scripts or alias to update CURRENT_{PYTHON,SALT}_DEV_BRANCH.
+** TODO Add .bashrc and .bash_profile suggestions to this repo.
 * Ongoing tasks
 ** Keep tuning codegrep
