@@ -9,4 +9,5 @@ find "$srchpath" \
     -or -name '.git' -prune \
     -or -name '*.pyc' -prune \
     -or -name '.*.sw?' -prune \
+    -or -type d \
     -or -print0 | xargs -0 grep ${color} "${grepargs}" "$1"
