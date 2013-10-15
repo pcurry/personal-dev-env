@@ -3,5 +3,8 @@ TODO list for building out dev environment tools
 ** TODO Finish up mknomivenv script.
 ** TODO Write scripts or alias to update CURRENT_{PYTHON,SALT}_DEV_BRANCH.
 ** TODO Add .bashrc and .bash_profile suggestions to this repo.
+** TODO Figure out how to get the git prompt to play nicely with the virtualenv changes to the prompt.
+** TODO Find a tool to automatically format imports to a defined standard
+** TODO Ask Yasser about plugins for SublimeText to do formatting.
 * Ongoing tasks
 ** Keep tuning codegrep
