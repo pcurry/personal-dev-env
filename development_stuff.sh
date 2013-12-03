@@ -13,11 +13,11 @@ function test_set() {
 }
 
 function set_python_dev() {
-    head -1 ~/.current-python-dev
+    echo $1 >  ~/.current-python-dev
 }
 
 function set_salt_dev() {
-    head -1 ~/.current-salt-dev
+    echo $1 >  ~/.current-salt-dev
 }
 
 function check_dev() {
