@@ -2,7 +2,7 @@
  Paul's Personal Dev Environment
 =================================
 
-The collection of things I keep setting up over and over again on all the POSIX shell machines I'm living and working on these days.  
+The collection of things I keep setting up over and over again on all the POSIX shell machines I'm living and working on these days.
 
 I'm documenting and VC-ing in the ways I am right now because it's practice for working habits.  Some of them I want to keep for myself, some of them are just the habits I have from my current job.
 
