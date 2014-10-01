@@ -7,13 +7,13 @@ function fetch_remotes {
     echo "Function call"
     for remote in `git remote`; do
         echo "Fetching remote: $remote"
-        # git fetch $remote
+        git fetch $remote
     done
 }
 
 for working_dir in `ls $BASEPATH`; do
     if [ -d $working_dir -a -d $working_dir/.git ]; then
-        echo "Fetching updates for project: " $working_dir
+        echo "Fetching remotes for project: " $working_dir
         pushd $BASEPATH/$working_dir
         fetch_remotes
         popd
