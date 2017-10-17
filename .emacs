@@ -1,7 +1,7 @@
 ;;; package --- Summary
 
 ;;; Commentary:
-;;; Current pcurry .emacs on Karhoo MacBook Pro
+;;; Current pcurry .emacs on 2015 MacBook Pro
 
 ;;; Code:
 
