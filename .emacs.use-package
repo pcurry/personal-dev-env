@@ -1,0 +1,30 @@
+
+;; First things should come firest
+
+
+(setq inhibit-startup-screen t)
+(setq-default indent-tabs-mode nil)
+
+
+
+(package-initialize)
+
+;; Bootstrap `use-package'
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+(eval-when-compile
+  (require 'use-package))
+
+(setq use-package-always-ensure t)
+
+(use-package exec-path-from-shell
+  :if (memq window-system '(mac ns))
+  :config
+  (exec-path-from-shell-initialize))
+
+(use-package paredit
+  :config
+  (add-hook 'emacs-lisp-mode-hook 'enable-paredit-mode)
+  :delight (paredit-mode " ()"))
