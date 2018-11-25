@@ -60,6 +60,7 @@
 ;; Some configuration to automatic behavior.
 (delete-selection-mode t)
 (show-paren-mode t)
+(electric-pair-mode)
 
 ;; Interactive do mode
 (require 'ido)
@@ -91,12 +92,6 @@
             (setq py-indent-offset 4)
             (setq indent-tabs-mode nil)
 	    (define-key python-mode-map [f8] 'python-pep8)))
-
-(add-hook 'python-mode-hook 'auto-complete-mode)
-(add-hook 'python-mode-hook 'jedi:setup)
-
-;; let jedi try to complete on dot
-(setq jedi:complete-on-dot t)
 
 ;; sh-mode keymap
 (add-hook 'sh-mode-hook
