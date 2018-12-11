@@ -13,5 +13,6 @@ find "$srchpath" \
     -or -name '.*.sw?' -prune \
     -or -name '*.min.js' -prune \
     -or -name '*.min.css' -prune \
+    -or -name '*.vmdk' -prune \
     -or -type d \
     -or -print0 | xargs -0 grep ${color} "${grepargs}" "$1"
