@@ -8,6 +8,7 @@ find "$srchpath" \
         -name '.svn' -prune \
     -or -name '.git' -prune \
     -or -name '.hg' -prune \
+    -or -name '.terraform' -prune \
     -or -name '*.pyc' -prune \
     -or -name '*.elc' -prune \
     -or -name '.*.sw?' -prune \
